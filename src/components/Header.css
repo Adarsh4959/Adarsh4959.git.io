@@ -1,0 +1,92 @@
+/* src/components/Header.css */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+}
+
+.header-title {
+  flex: 0.5;
+}
+
+header h1 {
+  font-size: 2rem;
+  margin: 0;
+}
+
+.header-nav {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.header-nav a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  font-size: 1.2rem;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.header-nav a:hover {
+  color: #007bff;
+  transform: scale(1.1); /* Slight scaling effect on hover */
+}
+
+.night-mode-btn,
+.download-cv-btn {
+  padding: 10px 15px;
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.night-mode-btn:hover,
+.download-cv-btn:hover {
+  background-color: #f1f1f1;
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+  background-color: #121212;
+  color: #fff;
+}
+
+body.dark-mode header {
+  background-color: #1a1a1a;
+}
+
+body.dark-mode .header-nav a {
+  color: #fff;
+}
+
+body.dark-mode .header-nav a:hover {
+  color: #00b3ff;
+}
+
+body.dark-mode .night-mode-btn,
+body.dark-mode .download-cv-btn {
+  background-color: #00b3ff;
+}
+
+body.dark-mode .night-mode-btn:hover,
+body.dark-mode .download-cv-btn:hover {
+  background-color: #007bff;
+}
+
+/* Night Mode and Light Mode Icon Styles */
+.header-nav .mode-icon {
+  cursor: pointer;
+  font-size: 1.5rem;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.header-nav .mode-icon:hover {
+  transform: scale(1.1);
+  color: #00b3ff; /* Add a highlight color when hovering over the mode icon */
+}

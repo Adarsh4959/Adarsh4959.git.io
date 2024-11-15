@@ -1,0 +1,85 @@
+/* src/components/AboutDetails.css */
+.about-details-section {
+  padding: 40px;
+  background-color: #f4f4f4; /* Light grey background for light mode */
+  color: #444; /* Default text color */
+  text-align: center; /* Center align all content */
+}
+
+.about-details-heading {
+  font-size: 32px;
+  margin-bottom: 10px;
+  color: #333; /* Darker color for heading */
+}
+
+.about-subheading {
+  font-size: 20px;
+  margin-bottom: 30px;
+  font-weight: 400;
+  color: #555;
+}
+
+.about-details-container {
+  display: flex;
+  align-items: center; /* Vertically align items in the center */
+  justify-content: center; /* Center the content horizontally */
+  background-color: #ffffff; /* White background for the card */
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for the container */
+  max-width: 1000px; /* Set a max width for the container */
+  margin: 0 auto; /* Center the container horizontally */
+}
+
+.about-image-container {
+  flex: 1;
+  padding: 10px;
+  display: flex;
+  justify-content: center; /* Center the image horizontally */
+}
+
+.about-image {
+  width: 250px;
+  height: 250px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for image */
+}
+
+.about-text-container {
+  flex: 2;
+  padding: 20px;
+  font-size: 16px;
+  line-height: 1.6;
+  background-color: #f9f9f9; /* Light background for the description card */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgb(255, 255, 255); /* Light shadow for the description card */
+}
+
+/* Dark mode styling using a media query */
+@media (prefers-color-scheme: dark) {
+  .about-details-section {
+    background-color: #ffffff; /* Full black background for dark mode */
+    color: #ffffff; /* White text for dark mode */
+  }
+
+  .about-details-heading {
+    color: #000000; /* White heading text in dark mode */
+  }
+
+  .about-subheading {
+    color: #000000; /* White subheading text in dark mode */
+  }
+
+  .about-image {
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.938); /* Light shadow for image */
+  }
+
+  .about-text-container {
+    background-color: #ffffff; /* Darker background for the description card */
+    color: #000000; /* White text for the description card */
+  }
+
+  .about-details-container {
+    background-color: #ffffff; /* Dark background for the entire content container */
+  }
+}

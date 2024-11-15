@@ -1,0 +1,61 @@
+/* src/components/About.css */
+.about-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .about-text {
+    flex: 1;
+    text-align: left;
+  }
+  
+  .greeting {
+    font-size: 3rem; /* Big greeting text */
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .about-description {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #000000;
+  }
+  
+  .about-image {
+    position: relative; /* Set the parent container to relative */
+    flex: 0.5;
+    text-align: center;
+}
+  
+  .about-image img {
+    width: 250px; /* Set the width of the image */
+    height: 250px; /* Set the height of the image */
+    border: 10px solid #ffffff; /* Border around the image */
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0); /* Shadow effect on bottom and right */
+    position: relative; /* Position the image relative to the container */
+    z-index: 1; /* Ensure the image is above the pseudo-element */
+}
+
+ /* .about-image::after {
+    content: ''; 
+    position: absolute;
+    bottom: -10px; 
+    right: -10px; 
+    width: 300px; 
+    height: 210px; 
+    background-color: #dcdcdc;
+    border-radius: 5px; 
+    z-index: 0; 
+}  */
+
+  
+  .about-text .greeting svg {
+    margin-left: 10px;
+    font-size: 2rem;
+    color: #ffffff; /* Blue color for the icon */
+  }
+  
